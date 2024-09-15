@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/pages/homepage";
 import WhatsThis from "./components/pages/whats-this";
@@ -45,8 +45,8 @@ export default class App extends Component {
 
   AuthorisedPages() {
     return [
-      <Route exact path="/create" component={CreatePage} />,
-      <Route exact path="/users/:slug" component={ProfilePage} />
+      <Route exact path="/create" element={<CreatePage />} />,
+      <Route exact path="/users/:slug" component={<ProfilePage/>} />
     ]
   }
 
