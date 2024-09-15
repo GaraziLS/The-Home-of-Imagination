@@ -32,7 +32,7 @@ export default class LoginComponent extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        axios.post('https://devcamp-fullstack-project-backend.onrender.com/login', {
+        axios.post('dev-camp-full-stack-project-backend-l2qq.vercel.app/login', {
             user_name: this.state.username,
             user_password: this.state.password
         }, { withCredentials: true })

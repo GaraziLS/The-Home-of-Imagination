@@ -16,7 +16,7 @@ export default class RandomTable extends Component {
     }
 
     getTable(item_id) {
-        axios.get("https://devcamp-fullstack-project-backend.onrender.com/tables/" + item_id)
+        axios.get("dev-camp-full-stack-project-backend-l2qq.vercel.app/tables/" + item_id)
             .then(response => {
                 this.setState({ RandomTableContent: response.data });
                 const { RandomTableContent } = this.state
