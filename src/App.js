@@ -11,7 +11,7 @@ import RandomTable from "./project_components/Item_Components/random-table"
 import ProfilePage from "./pages/user-profile"
 
 import Navbar from "./project_components/navbar";
-import Icons from "../helpers/icons";
+import Icons from "./helpers/icons";
 
 
 
