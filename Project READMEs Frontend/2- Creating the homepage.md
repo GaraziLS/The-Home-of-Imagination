@@ -149,7 +149,7 @@ this.state = {
 
 ```
 getAllTables() {
-        axios.get("dev-camp-full-stack-project-backend-l2qq.vercel.app/tables")
+        axios.get("https://devcamp-fullstack-project-backend.onrender.com/tables")
             .then(response => {
                 this.setState({ data: response.data, isLoading: false })
             }).catch(error => {

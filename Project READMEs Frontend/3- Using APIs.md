@@ -15,7 +15,7 @@ export default class App extends Component {
   }
 
   getAllItemsData() {
-    axios.get("dev-camp-full-stack-project-backend-l2qq.vercel.app/tables")
+    axios.get("https://devcamp-fullstack-project-backend.onrender.com/tables")
       .then(response => {
         console.log("Items received", response)
       }).catch(error => {
@@ -67,7 +67,7 @@ export default class ItemContainer extends Component {
     // API Connections
 
     getAllItemsData() {
-        axios.get("dev-camp-full-stack-project-backend-l2qq.vercel.app/tables")
+        axios.get("https://devcamp-fullstack-project-backend.onrender.com/tables")
             .then(response => {
                 console.log("Items received", response)
             }).catch(error => {
@@ -124,7 +124,7 @@ export default class ItemContainer extends Component {
     // API Connections
 
     getAllTables() {
-        axios.get("dev-camp-full-stack-project-backend-l2qq.vercel.app/tables")
+        axios.get("https://devcamp-fullstack-project-backend.onrender.com/tables")
             .then(response => {
                 console.log("Items received", response)
             }).catch(error => {
@@ -178,7 +178,7 @@ export default class ItemContainer extends Component {
     // API Connections
 
     getAllTables() {
-        axios.get("dev-camp-full-stack-project-backend-l2qq.vercel.app/tables")
+        axios.get("https://devcamp-fullstack-project-backend.onrender.com/tables")
             .then(response => {
                 this.setState({ data: response.data, isLoading: false })
             }).catch(error => {
