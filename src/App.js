@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/pages/homepage";
 import WhatsThis from "./components/pages/whats-this";
@@ -58,24 +58,19 @@ export default class App extends Component {
 
           <Navbar LoggedInStatus={this.state.LoginStatus} />
 
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/tables" component={Home} />
-            <Route exact path="/whats-this" component={WhatsThis} />
-            {this.state.LoginStatus == "LOGGED_IN" ? this.AuthorisedPages()[0] : null}
-            {this.state.LoginStatus == "LOGGED_IN" ? this.AuthorisedPages()[1] : null}
-            <Route exact path="/signup" component={SignupPage} />
-            <Route exact path="/login"
-              render={props => (
-                <LoginPage
-                  {...props}
-                  handleSuccessfulLogin={this.handleSuccessfulLogin}
-                  handleUnsuccessfulLogin={this.handleUnsuccessfulLogin} />
-              )}
-            />
-            <Route exact path="/tables/:slug" component={RandomTable} />
-            <Route component={ErrorPage} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tables" element={<Home />} />
+            <Route path="/whats-this" element={<WhatsThis />} />
+            {this.state.LoginStatus === "LOGGED_IN" && this.AuthorisedPages()}
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/login" element={<LoginPage 
+              handleSuccessfulLogin={this.handleSuccessfulLogin} 
+              handleUnsuccessfulLogin={this.handleUnsuccessfulLogin} 
+            />} />
+            <Route path="/tables/:slug" element={<RandomTable />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
         </Router>
       </div>
     );
