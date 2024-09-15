@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
-import Home from "./pages/homepage";
-import WhatsThis from "./pages/whats-this";
-import CreatePage from "./pages/create";
-import ErrorPage from "./pages/error-page";
-import SignupPage from "./pages/signup";
-import LoginPage from "./pages/login";
-import RandomTable from "./project_components/Item_Components/random-table"
-import ProfilePage from "./pages/user-profile"
+import Home from "./components/pages/homepage";
+import WhatsThis from "./components/pages/whats-this";
+import CreatePage from "./components/pages/create";
+import ErrorPage from "./components/pages/error-page";
+import SignupPage from "./components/pages/signup";
+import LoginPage from "./components/pages/login";
+import RandomTable from "./components/project_components/Item_Components/random-table"
+import ProfilePage from "./components/pages/user-profile"
 
-import Navbar from "./project_components/navbar";
+import Navbar from "./components/project_components/navbar";
 import Icons from "./helpers/icons";
 
 

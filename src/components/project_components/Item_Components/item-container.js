@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import SingleItem from '../Item_Components/single-item';
-import LoadingIcon from "../../../../src/helpers/loading-status";
+import LoadingIcon from "../../../helpers/loading-status";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from "react-router-dom";
 import { Accordion, AccordionTab } from 'primereact/accordion'

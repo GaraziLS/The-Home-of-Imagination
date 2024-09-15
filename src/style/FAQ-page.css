@@ -1,0 +1,19 @@
+@media (max-width: 425px) {
+  .page-wrapper {
+    margin: 20px;
+  }
+  .page-wrapper .text-wrapper {
+    text-align: justify;
+  }
+}
+@media (min-width: 425px) {
+  .header {
+    padding-top: 10px;
+  }
+  .page-wrapper {
+    margin: 20px;
+  }
+  .page-wrapper .text-wrapper {
+    text-align: justify;
+  }
+}/*# sourceMappingURL=FAQ-page.css.map */

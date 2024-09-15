@@ -1,0 +1,24 @@
+/* MEDIA QUERIES FOR MOBILE */
+@media (max-width: 425px) {
+  p,
+  li {
+    font-size: 15px;
+  }
+  .header {
+    font-family: "Stoke", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+}
+/* MEDIA QUERIES FOR DESKTOP */
+@media (min-width: 425px) {
+  .header {
+    font-family: "Stoke", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=about-page.css.map */
