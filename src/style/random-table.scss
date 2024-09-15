@@ -1,0 +1,35 @@
+// No media queries are needed here because the generator looks good already in mobile.
+
+.random-table-wrapper {
+    display: grid;
+    grid-template-rows: 4fr 3fr 2fr;
+    margin-top: 40px;
+}
+
+.gen-style {
+    align-self: center;
+    justify-self: center;
+}
+
+.gen-style:nth-child(1) {
+    font-size: 30px;
+    margin-top: 80px;
+    font-family: "Stoke", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.gen-style:nth-child(2) {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.roll-button {
+    @include button-style;
+    height: 50px;
+    width: 100px;
+    padding: -5px;
+    font-size: 20px;
+    margin-top: 20px;
+}

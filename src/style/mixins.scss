@@ -1,0 +1,49 @@
+@mixin link-style {
+    text-decoration: none;
+    color: $MainColor;
+    cursor: pointer;
+
+    &:hover {
+        color: $HoverBlue;
+        cursor: pointer;
+    }
+}
+
+@mixin active-link {
+    color: $HoverBlue;
+    border-bottom: 1px solid $HoverBlue;
+}
+
+@mixin button-style {
+    background-color: $MainColor;
+    color: white;
+    padding: 8px;
+    border: none;
+
+    &:hover {
+        background-color: $HoverBlue;
+        cursor: pointer;
+    }
+}
+
+@mixin icon-styles {
+    color: $MainColor;
+        &:hover {
+            color: $HoverBlue;
+        }
+}
+
+@mixin form-style {
+    background-color: $TextFields;
+    border: none;
+    padding: 10px;
+   
+
+    &::placeholder {
+        text-align: center;
+    }
+
+    &:focus {
+        outline: 1px solid $HoverBlue;
+    }
+}

@@ -1,0 +1,17 @@
+.faq-wrapper .p-accordion .p-component {
+    z-index: 500;
+}
+
+.p-accordion-header-text {
+    @include link-style;
+    font-size: 15px;
+
+    &:hover {
+        background-color: $TextFields;
+        opacity: 75%
+    }
+}
+
+.p-accordion-toggle-icon {
+    color: $MainColor;
+}

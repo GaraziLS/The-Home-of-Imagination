@@ -1,0 +1,28 @@
+// MEDIA QUERIES FOR MOBILE
+
+@media (max-width: 425px) {
+    .page-wrapper {
+        margin: 20px;
+
+        .text-wrapper {
+            text-align: justify;
+        }
+    }
+}
+
+// MEDIA QUERIES FOR DESKTOP
+
+@media (min-width: 425px) {
+
+    .header {
+        padding-top: 10px;
+    }
+
+    .page-wrapper {
+        margin: 20px;
+
+        .text-wrapper {
+            text-align: justify;
+        }
+    }
+}

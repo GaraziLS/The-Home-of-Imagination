@@ -1,0 +1,49 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #EBEBEB;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+.link,
+.link>a {
+    color: $HoverBlue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.loading-icon {
+    font-size: 50px;
+    color: $MainColor;
+}
+
+.app {
+    height: 100%
+}

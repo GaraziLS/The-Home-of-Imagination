@@ -1,0 +1,43 @@
+
+
+// Login layout
+
+.header {
+    padding-top: 30px;
+    font-family: "Stoke", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.auth-form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0fr 0.1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+
+    .auth-icon {
+        gap: -50px;
+        align-items: flex-start;
+        justify-self: flex-start;
+        font-size: 20px;
+        color: $MainColor;
+    }
+
+    .form-field {
+        @include form-style;
+        align-self: center;
+        justify-self: center;
+
+        }
+
+button {
+    @include button-style;
+        grid-column: span 2;
+        margin-top: 10px;
+}
+
+}
