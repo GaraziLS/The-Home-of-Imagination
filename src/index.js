@@ -4,6 +4,7 @@ import './style/main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from "react-router-dom";
+import axios from "axios";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
