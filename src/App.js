@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./components/pages/homepage";
 import WhatsThis from "./components/pages/whats-this";
@@ -54,8 +54,6 @@ export default class App extends Component {
     return (
       <div className='app'>
 
-        <Router>
-
           <Navbar LoggedInStatus={this.state.LoginStatus} />
 
           <Routes>
@@ -71,7 +69,6 @@ export default class App extends Component {
             <Route path="/tables/:slug" element={<RandomTable />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
-        </Router>
       </div>
     );
   };
