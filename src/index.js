@@ -8,7 +8,7 @@ import axios from "axios";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Home-of-Imagination">
     <App />
   </BrowserRouter>
 );
