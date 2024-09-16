@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './style/main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HashRouter>
+  <BrowserRouter>
     <App />
-  </HashRouter>
+  </BrowserRouter>
 );
 
 const url = `https://devcamp-fullstack-project-backend.onrender.com/`; // Replace with your Render URL
